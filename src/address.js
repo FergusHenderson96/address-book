@@ -5,12 +5,13 @@ class AddressEntry extends Component {
     render() {
         let {result} = this.props;
         return (
+        <div class="result">
+            <placeholder>Enter Address</placeholder>
             <button id="add" onClick={e => this.props.onClick(e.target.name)}>Add</button>
-            <div className="result">
-                <p>{result}</p>
+            <p>{result}</p>
             </div>
-    )
-        ;
+    );
+        
     }
 }
 
